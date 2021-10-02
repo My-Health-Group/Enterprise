@@ -79,6 +79,25 @@ body {
     text-align: left;
     background-color: #fff
 }
+  
+  #exTab2 h3 {
+    color : var(--primary);
+    padding : 5px 15px;
+  }
+  
+  /* remove border radius for the tab */
+  
+  #exTab1 .nav-pills > li > a {
+    border-radius: 0;
+  }
+  
+  /* change border radius for the tab , apply corners on top*/
+  
+  #exTab3 .nav-pills > li > a {
+    border-radius: 4px 4px 0 0 ;
+  }
+  
+  
 
 [tabindex="-1"]:focus:not(:focus-visible) {
     outline: 0!important
@@ -178,6 +197,11 @@ sup {
 }
 
 a {
+    color: black;
+    text-decoration: none;
+    background-color: transparent
+}
+.a-1 {
     color: #4e73df;
     text-decoration: none;
     background-color: transparent
@@ -185,7 +209,7 @@ a {
 
 a:hover {
     color: #224abe;
-    text-decoration: underline
+    text-decoration: none
 }
 
 a:not([href]):not([class]) {
@@ -599,6 +623,11 @@ pre code {
     width: 100%;
     padding-right: .75rem;
     padding-left: .75rem;
+    margin-right: auto;
+    margin-left: auto
+}
+.container1{
+    width: 100%;
     margin-right: auto;
     margin-left: auto
 }
@@ -4271,7 +4300,8 @@ input[type=submit].btn-block {
 }
 
 .nav-tabs {
-    border-bottom: 1px solid #dddfeb
+    border-bottom: 1px solid var(--primary);
+    margin-bottom: 1rem;
 }
 
 .nav-tabs .nav-link {
@@ -4312,7 +4342,7 @@ input[type=submit].btn-block {
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
     color: #fff;
-    background-color: #4e73df
+    background-color: black
 }
 
 .nav-fill .nav-item,
@@ -10156,7 +10186,8 @@ body {
 }
 
 a:focus {
-    outline: 0
+    outline: 0;
+    text-decoration: underline;
 }
 
 #wrapper {
