@@ -404,17 +404,19 @@
                         <div class="sidebar-dark hr-b "></div>
 
                         <div id="exTab2" class="container1 ">	
-                            
+
                             <ul class="nav nav-tabs ">
-                                <li class=" mr-5">
+                                <li class=" mr-5 text-primary">
                                 <a  href="#1" data-toggle="tab">Telemedicine</a>
                                 </li>
                                 <li class = "mr-5 text-primary"><a href="#2" data-toggle="tab">In Person</a>
                                 </li>
-                                <li class = "mr-5"><a href="#3" data-toggle="tab">All</a>
+                                <li class = "mr-5 text-primary"><a href="#3" data-toggle="tab">All</a>
                                 </li>
                             </ul>
 
+
+                            <!-- Telemedicine nav pill -->
                             <div class="tab-content ">
                                 <div class="tab-pane active" id="1">
 
@@ -483,16 +485,13 @@
                                                     <!-- Card Body -->
                                                     <div class="card-body">
                                                         <div class="chart-area">
-                                                            <canvas id="myAreaChart"></canvas>
+                                                            <canvas id="myAreaChartTelemedicine"></canvas>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         
-                                            <!-- table -->
-                                            <!-- <div class="col-xl-12 p-0 col-lg-7">
-                                                <?php require "tables.html";?>
-                                            </div> -->
+
                                         </div>
                                         <!-- Column 2 -->
                                         <div class="col-xl-3 p-0">
@@ -517,20 +516,14 @@
                                                     </div>
                                                     <!-- Card Body -->
                                                     <div class="card-body">
+                                                    <div class = "mt-2" >
+                                                        <h6 class="text-primary small">Total clinics available <span class = "h6 ml-5 font-weight-bold">8</span></h6>
+                                                        <h6 class="text-primary small">Total clinics available <span class = "h6 ml-5 font-weight-bold">5,000</span></h6>
+                                                    </div>
                                                         <div class="chart-pie pt-4 pb-2">
-                                                            <canvas width="600" height="250" id="myPieChart"></canvas>
+                                                            <canvas width="600" height="250" id="myPieChartTelemedicine"></canvas>
                                                         </div>
-                                                        <!-- <div class="mt-4 text-center small">
-                                                            <div class="mr-2">
-                                                                <i class="fas fa-circle text-primary"></i> Direct
-                                                            </div>
-                                                            <div class="mr-2">
-                                                                <i class="fas fa-circle text-success"></i> Social
-                                                            </div>
-                                                            <div class="mr-2">
-                                                                <i class="fas fa-circle text-info"></i> Referral
-                                                            </div>
-                                                        </div> -->
+                                                        
                                                     </div>
                                                 </div>
                                             </div>
@@ -539,6 +532,7 @@
 
                                 </div>
 
+                                <!-- In-person nav pill-->
                                 <div class="tab-pane" id="2">
                                 <div class="row">
                                         <!-- column 1 -->
@@ -555,7 +549,7 @@
                                                                     <i class=" align-top fas fa-calendar-check"></i>
                                                                 </div>
                                                                 <div class="col mr-2">
-                                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-secondary">5000</div>
+                                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-secondary">3000</div>
                                                                     <div class="row">
                                                                         <div class="col-md-10 small">Total appointments</div>
                                                                     </div>
@@ -575,7 +569,7 @@
                                                                     <i class="align-top fas fa-calendar-check"></i>
                                                                 </div>
                                                                 <div class="col mr-2">
-                                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-secondary">100</div>
+                                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-secondary">7600</div>
                                                                     <div class="row">
                                                                         <div class="col-md-10 small">Appointments booked today</div>
                                                                     </div>
@@ -605,16 +599,12 @@
                                                     <!-- Card Body -->
                                                     <div class="card-body">
                                                         <div class="chart-area">
-                                                            <canvas id="myAreaChart"></canvas>
+                                                            <canvas id="myAreaChartInPerson"></canvas>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        
-                                            <!-- table -->
-                                            <!-- <div class="col-xl-12 p-0 col-lg-7">
-                                                <?php require "tables.html";?>
-                                            </div> -->
+                                                                                
                                         </div>
                                         <!-- Column 2 -->
                                         <div class="col-xl-3 p-0">
@@ -639,26 +629,22 @@
                                                     </div>
                                                     <!-- Card Body -->
                                                     <div class="card-body">
+                                                    <div class = "mt-2" >
+                                                        <h6 class="text-primary small">Total clinics available <span class = "h6 ml-5 font-weight-bold">8</span></h6>
+                                                        <h6 class="text-primary small">Total clinics available <span class = "h6 ml-5 font-weight-bold">5,000</span></h6>
+                                                    </div>
                                                         <div class="chart-pie pt-4 pb-2">
-                                                            <canvas width="600" height="250" id="myPieChart"></canvas>
+                                                            <canvas width="600" height="250" id="myPieChartInPerson"></canvas>
                                                         </div>
-                                                        <!-- <div class="mt-4 text-center small">
-                                                            <div class="mr-2">
-                                                                <i class="fas fa-circle text-primary"></i> Direct
-                                                            </div>
-                                                            <div class="mr-2">
-                                                                <i class="fas fa-circle text-success"></i> Social
-                                                            </div>
-                                                            <div class="mr-2">
-                                                                <i class="fas fa-circle text-info"></i> Referral
-                                                            </div>
-                                                        </div> -->
+                                                        
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
+                                <!-- All nav pill -->
                                 <div class="tab-pane" id="3">
                                 <div class="row">
                                         <!-- column 1 -->
@@ -725,16 +711,12 @@
                                                     <!-- Card Body -->
                                                     <div class="card-body">
                                                         <div class="chart-area">
-                                                            <canvas id="myAreaChart"></canvas>
+                                                            <canvas id="myAreaChartAll"></canvas>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         
-                                            <!-- table -->
-                                            <!-- <div class="col-xl-12 p-0 col-lg-7">
-                                                <?php require "tables.html";?>
-                                            </div> -->
                                         </div>
                                         <!-- Column 2 -->
                                         <div class="col-xl-3 p-0">
@@ -759,20 +741,14 @@
                                                     </div>
                                                     <!-- Card Body -->
                                                     <div class="card-body">
+                                                    <div class = "mt-2" >
+                                                        <h6 class="text-primary small">Total clinics available <span class = "h6 ml-5 font-weight-bold">8</span></h6>
+                                                        <h6 class="text-primary small">Total clinics available <span class = "h6 ml-5 font-weight-bold">5,000</span></h6>
+                                                    </div>
                                                         <div class="chart-pie pt-4 pb-2">
-                                                            <canvas width="600" height="250" id="myPieChart"></canvas>
+                                                            <canvas width="600" height="250" id="myPieChartAll"></canvas>
                                                         </div>
-                                                        <!-- <div class="mt-4 text-center small">
-                                                            <div class="mr-2">
-                                                                <i class="fas fa-circle text-primary"></i> Direct
-                                                            </div>
-                                                            <div class="mr-2">
-                                                                <i class="fas fa-circle text-success"></i> Social
-                                                            </div>
-                                                            <div class="mr-2">
-                                                                <i class="fas fa-circle text-info"></i> Referral
-                                                            </div>
-                                                        </div> -->
+                                                        
                                                     </div>
                                                 </div>
                                             </div>
@@ -851,12 +827,14 @@
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
 
+    
+
     <!-- Page level plugins -->
     <script src="vendor/datatables/jquery.dataTables.min.js"></script>
     <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
-    <!-- Page level custom scripts -->
-    <script src="js/demo/datatables-demo.js"></script>
+<!-- Page level custom scripts -->
+<script src="js/demo/datatables-demo.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
