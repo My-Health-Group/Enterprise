@@ -10188,6 +10188,7 @@ body {
 a:focus {
     outline: 0;
     text-decoration: underline;
+    text-decoration-thickness: 5px;
 }
 
 #wrapper {
