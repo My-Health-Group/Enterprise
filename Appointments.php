@@ -403,124 +403,385 @@
 
                         <div class="sidebar-dark hr-b "></div>
 
-                        <div class="row">
-                            <!-- column 1 -->
-                            <div class = "col-xl-9">
-                                <!-- Content Row -->
-                                <div class="row">
-                                    <!-- Total appointments card -->
-                                    <div class="col-xl-3 col-md-6 mb-4">
-                                        <div class="card shadow py-2 ">
-                                            <div class="card-body">
-                                                <div class="row no-gutters align-items-center">
+                        <div id="exTab2" class="container1 ">	
+                            
+                            <ul class="nav nav-tabs ">
+                                <li class=" mr-5">
+                                <a  href="#1" data-toggle="tab">Telemedicine</a>
+                                </li>
+                                <li class = "mr-5 text-primary"><a href="#2" data-toggle="tab">In Person</a>
+                                </li>
+                                <li class = "mr-5"><a href="#3" data-toggle="tab">All</a>
+                                </li>
+                            </ul>
 
-                                                    <div class="col-2 mr-3">
-                                                        <i class=" align-top fas fa-calendar-check"></i>
+                            <div class="tab-content ">
+                                <div class="tab-pane active" id="1">
+
+                                    <div class="row">
+                                        <!-- column 1 -->
+                                        <div class = "col-xl-9">
+                                            <!-- Content Row -->
+                                            <div class="row">
+                                                <!-- Total appointments card -->
+                                                <div class="col-xl-3 col-md-6 mb-4">
+                                                    <div class="card shadow py-2 ">
+                                                        <div class="card-body">
+                                                            <div class="row no-gutters align-items-center">
+
+                                                                <div class="col-2 mr-3">
+                                                                    <i class=" align-top fas fa-calendar-check"></i>
+                                                                </div>
+                                                                <div class="col mr-2">
+                                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-secondary">5000</div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-10 small">Total appointments</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <div class="col mr-2">
-                                                        <div class="h5 mb-0 mr-3 font-weight-bold text-secondary">5000</div>
-                                                        <div class="row">
-                                                            <div class="col-md-10 small">Total appointments</div>
+                                                </div>
+
+                                                <!--Appointments today card -->
+                                                <div class="col-xl-3 col-md-6 mb-4">
+                                                    <div class="card shadow py-2 ">
+                                                        <div class="card-body">
+                                                            <div class="row no-gutters align-items-center">
+
+                                                            <div class="col-2 mr-3">
+                                                                    <i class="align-top fas fa-calendar-check"></i>
+                                                                </div>
+                                                                <div class="col mr-2">
+                                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-secondary">100</div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-10 small">Appointments booked today</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                    
+                                            </div>
+                                            <!-- Area Chart -->
+                                            <div class="col-xl-12 p-0 col-lg-7">
+                                                <div class="card shadow mb-4">
+                                                    <!-- Card Header - Dropdown -->
+                                                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                                        <h6 class="m-0 font-weight-bold text-primary">Booking trends</h6>
+                                                        <div class=" col-xl-4 col-md-6 mb-4 text-primary font-weight-bold">
+                                                <select id="service" name="gender" class="form-control shadow-none" required> 
+                                                    <option value="">Service</option>
+                                                    <option value="Male">Gender</option>
+                                                    <option value="Female">Age group</option>
+                                                    <option value="Female">Time</option>
+                                                
+                                                </select>
+                                            </div>
+                                                    </div>
+                                                    <!-- Card Body -->
+                                                    <div class="card-body">
+                                                        <div class="chart-area">
+                                                            <canvas id="myAreaChart"></canvas>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-
-                                    <!--Appointments today card -->
-                                    <div class="col-xl-3 col-md-6 mb-4">
-                                        <div class="card shadow py-2 ">
-                                            <div class="card-body">
-                                                <div class="row no-gutters align-items-center">
-
-                                                <div class="col-2 mr-3">
-                                                        <i class="align-top fas fa-calendar-check"></i>
-                                                    </div>
-                                                    <div class="col mr-2">
-                                                        <div class="h5 mb-0 mr-3 font-weight-bold text-secondary">100</div>
-                                                        <div class="row">
-                                                            <div class="col-md-10 small">Appointments booked today</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                          
-                                </div>
-                                <!-- Area Chart -->
-                                <div class="col-xl-12 p-0 col-lg-7">
-                                    <div class="card shadow mb-4">
-                                        <!-- Card Header - Dropdown -->
-                                        <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                            <h6 class="m-0 font-weight-bold text-primary">Booking trends</h6>
-                                            <div class=" col-xl-4 col-md-6 mb-4 text-primary font-weight-bold">
-                                    <select id="service" name="gender" class="form-control shadow-none" required> 
-                                        <option value="">Service</option>
-                                        <option value="Male">Gender</option>
-                                        <option value="Female">Age group</option>
-                                        <option value="Female">Time</option>
-                                      
-                                    </select>
-                                </div>
-                                        </div>
-                                        <!-- Card Body -->
-                                        <div class="card-body">
-                                            <div class="chart-area">
-                                                <canvas id="myAreaChart"></canvas>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                               
-                                <!-- table -->
-                                <!-- <div class="col-xl-12 p-0 col-lg-7">
-                                    <?php require "tables.html";?>
-                                </div> -->
-                            </div>
-                            <!-- Column 2 -->
-                            <div class="col-xl-3 p-0">
-                                <!-- Pie Chart -->
-                                <div class="col-xl-12 col-lg-5">
-                                    <div class="card shadow mb-4 h-100">
-                                        <!-- Card Header - Dropdown -->
-                                        <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                            <h6 class="m-0 font-weight-bold text-primary">Medical conditions</h6>
-                                            <div class="dropdown no-arrow">
-                                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                                                </a>
-                                                <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
-                                                    <div class="dropdown-header">Dropdown Header:</div>
-                                                    <a class="dropdown-item" href="#">Action</a>
-                                                    <a class="dropdown-item" href="#">Another action</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a class="dropdown-item" href="#">Something else here</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Card Body -->
-                                        <div class="card-body">
-                                            <div class="chart-pie pt-4 pb-2">
-                                                <canvas width="600" height="250" id="myPieChart"></canvas>
-                                            </div>
-                                            <!-- <div class="mt-4 text-center small">
-                                                <div class="mr-2">
-                                                    <i class="fas fa-circle text-primary"></i> Direct
-                                                </div>
-                                                <div class="mr-2">
-                                                    <i class="fas fa-circle text-success"></i> Social
-                                                </div>
-                                                <div class="mr-2">
-                                                    <i class="fas fa-circle text-info"></i> Referral
-                                                </div>
+                                        
+                                            <!-- table -->
+                                            <!-- <div class="col-xl-12 p-0 col-lg-7">
+                                                <?php require "tables.html";?>
                                             </div> -->
+                                        </div>
+                                        <!-- Column 2 -->
+                                        <div class="col-xl-3 p-0">
+                                            <!-- Pie Chart -->
+                                            <div class="col-xl-12 col-lg-5">
+                                                <div class="card shadow mb-4 h-100">
+                                                    <!-- Card Header - Dropdown -->
+                                                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                                        <h6 class="m-0 font-weight-bold text-primary">Medical conditions</h6>
+                                                        <div class="dropdown no-arrow">
+                                                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                                                            </a>
+                                                            <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
+                                                                <div class="dropdown-header">Dropdown Header:</div>
+                                                                <a class="dropdown-item" href="#">Action</a>
+                                                                <a class="dropdown-item" href="#">Another action</a>
+                                                                <div class="dropdown-divider"></div>
+                                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Card Body -->
+                                                    <div class="card-body">
+                                                        <div class="chart-pie pt-4 pb-2">
+                                                            <canvas width="600" height="250" id="myPieChart"></canvas>
+                                                        </div>
+                                                        <!-- <div class="mt-4 text-center small">
+                                                            <div class="mr-2">
+                                                                <i class="fas fa-circle text-primary"></i> Direct
+                                                            </div>
+                                                            <div class="mr-2">
+                                                                <i class="fas fa-circle text-success"></i> Social
+                                                            </div>
+                                                            <div class="mr-2">
+                                                                <i class="fas fa-circle text-info"></i> Referral
+                                                            </div>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="tab-pane" id="2">
+                                <div class="row">
+                                        <!-- column 1 -->
+                                        <div class = "col-xl-9">
+                                            <!-- Content Row -->
+                                            <div class="row">
+                                                <!-- Total appointments card -->
+                                                <div class="col-xl-3 col-md-6 mb-4">
+                                                    <div class="card shadow py-2 ">
+                                                        <div class="card-body">
+                                                            <div class="row no-gutters align-items-center">
+
+                                                                <div class="col-2 mr-3">
+                                                                    <i class=" align-top fas fa-calendar-check"></i>
+                                                                </div>
+                                                                <div class="col mr-2">
+                                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-secondary">5000</div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-10 small">Total appointments</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!--Appointments today card -->
+                                                <div class="col-xl-3 col-md-6 mb-4">
+                                                    <div class="card shadow py-2 ">
+                                                        <div class="card-body">
+                                                            <div class="row no-gutters align-items-center">
+
+                                                            <div class="col-2 mr-3">
+                                                                    <i class="align-top fas fa-calendar-check"></i>
+                                                                </div>
+                                                                <div class="col mr-2">
+                                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-secondary">100</div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-10 small">Appointments booked today</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                    
+                                            </div>
+                                            <!-- Area Chart -->
+                                            <div class="col-xl-12 p-0 col-lg-7">
+                                                <div class="card shadow mb-4">
+                                                    <!-- Card Header - Dropdown -->
+                                                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                                        <h6 class="m-0 font-weight-bold text-primary">Booking trends</h6>
+                                                        <div class=" col-xl-4 col-md-6 mb-4 text-primary font-weight-bold">
+                                                <select id="service" name="gender" class="form-control shadow-none" required> 
+                                                    <option value="">Service</option>
+                                                    <option value="Male">Gender</option>
+                                                    <option value="Female">Age group</option>
+                                                    <option value="Female">Time</option>
+                                                
+                                                </select>
+                                            </div>
+                                                    </div>
+                                                    <!-- Card Body -->
+                                                    <div class="card-body">
+                                                        <div class="chart-area">
+                                                            <canvas id="myAreaChart"></canvas>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                            <!-- table -->
+                                            <!-- <div class="col-xl-12 p-0 col-lg-7">
+                                                <?php require "tables.html";?>
+                                            </div> -->
+                                        </div>
+                                        <!-- Column 2 -->
+                                        <div class="col-xl-3 p-0">
+                                            <!-- Pie Chart -->
+                                            <div class="col-xl-12 col-lg-5">
+                                                <div class="card shadow mb-4 h-100">
+                                                    <!-- Card Header - Dropdown -->
+                                                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                                        <h6 class="m-0 font-weight-bold text-primary">Medical conditions</h6>
+                                                        <div class="dropdown no-arrow">
+                                                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                                                            </a>
+                                                            <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
+                                                                <div class="dropdown-header">Dropdown Header:</div>
+                                                                <a class="dropdown-item" href="#">Action</a>
+                                                                <a class="dropdown-item" href="#">Another action</a>
+                                                                <div class="dropdown-divider"></div>
+                                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Card Body -->
+                                                    <div class="card-body">
+                                                        <div class="chart-pie pt-4 pb-2">
+                                                            <canvas width="600" height="250" id="myPieChart"></canvas>
+                                                        </div>
+                                                        <!-- <div class="mt-4 text-center small">
+                                                            <div class="mr-2">
+                                                                <i class="fas fa-circle text-primary"></i> Direct
+                                                            </div>
+                                                            <div class="mr-2">
+                                                                <i class="fas fa-circle text-success"></i> Social
+                                                            </div>
+                                                            <div class="mr-2">
+                                                                <i class="fas fa-circle text-info"></i> Referral
+                                                            </div>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="3">
+                                <div class="row">
+                                        <!-- column 1 -->
+                                        <div class = "col-xl-9">
+                                            <!-- Content Row -->
+                                            <div class="row">
+                                                <!-- Total appointments card -->
+                                                <div class="col-xl-3 col-md-6 mb-4">
+                                                    <div class="card shadow py-2 ">
+                                                        <div class="card-body">
+                                                            <div class="row no-gutters align-items-center">
+
+                                                                <div class="col-2 mr-3">
+                                                                    <i class=" align-top fas fa-calendar-check"></i>
+                                                                </div>
+                                                                <div class="col mr-2">
+                                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-secondary">5000</div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-10 small">Total appointments</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!--Appointments today card -->
+                                                <div class="col-xl-3 col-md-6 mb-4">
+                                                    <div class="card shadow py-2 ">
+                                                        <div class="card-body">
+                                                            <div class="row no-gutters align-items-center">
+
+                                                            <div class="col-2 mr-3">
+                                                                    <i class="align-top fas fa-calendar-check"></i>
+                                                                </div>
+                                                                <div class="col mr-2">
+                                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-secondary">100</div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-10 small">Appointments booked today</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                    
+                                            </div>
+                                            <!-- Area Chart -->
+                                            <div class="col-xl-12 p-0 col-lg-7">
+                                                <div class="card shadow mb-4">
+                                                    <!-- Card Header - Dropdown -->
+                                                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                                        <h6 class="m-0 font-weight-bold text-primary">Booking trends</h6>
+                                                        <div class=" col-xl-4 col-md-6 mb-4 text-primary font-weight-bold">
+                                                <select id="service" name="gender" class="form-control shadow-none" required> 
+                                                    <option value="">Service</option>
+                                                    <option value="Male">Gender</option>
+                                                    <option value="Female">Age group</option>
+                                                    <option value="Female">Time</option>
+                                                
+                                                </select>
+                                            </div>
+                                                    </div>
+                                                    <!-- Card Body -->
+                                                    <div class="card-body">
+                                                        <div class="chart-area">
+                                                            <canvas id="myAreaChart"></canvas>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                            <!-- table -->
+                                            <!-- <div class="col-xl-12 p-0 col-lg-7">
+                                                <?php require "tables.html";?>
+                                            </div> -->
+                                        </div>
+                                        <!-- Column 2 -->
+                                        <div class="col-xl-3 p-0">
+                                            <!-- Pie Chart -->
+                                            <div class="col-xl-12 col-lg-5">
+                                                <div class="card shadow mb-4 h-100">
+                                                    <!-- Card Header - Dropdown -->
+                                                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                                        <h6 class="m-0 font-weight-bold text-primary">Medical conditions</h6>
+                                                        <div class="dropdown no-arrow">
+                                                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                                                            </a>
+                                                            <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
+                                                                <div class="dropdown-header">Dropdown Header:</div>
+                                                                <a class="dropdown-item" href="#">Action</a>
+                                                                <a class="dropdown-item" href="#">Another action</a>
+                                                                <div class="dropdown-divider"></div>
+                                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Card Body -->
+                                                    <div class="card-body">
+                                                        <div class="chart-pie pt-4 pb-2">
+                                                            <canvas width="600" height="250" id="myPieChart"></canvas>
+                                                        </div>
+                                                        <!-- <div class="mt-4 text-center small">
+                                                            <div class="mr-2">
+                                                                <i class="fas fa-circle text-primary"></i> Direct
+                                                            </div>
+                                                            <div class="mr-2">
+                                                                <i class="fas fa-circle text-success"></i> Social
+                                                            </div>
+                                                            <div class="mr-2">
+                                                                <i class="fas fa-circle text-info"></i> Referral
+                                                            </div>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                    
                 </div>
             </div>
@@ -596,6 +857,10 @@
 
     <!-- Page level custom scripts -->
     <script src="js/demo/datatables-demo.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
