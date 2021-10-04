@@ -426,9 +426,7 @@
                                                          </div>
 
                                                     </div>
-                                                    <!-- <div class="col-auto">
-                                                        <i class="fas fa-calendar fa-2x text-gray-300"></i>
-                                                    </div> -->
+                                                    
                                                 </div>
                                             </div>
                                         </div>
@@ -493,19 +491,18 @@
                                         <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                                             <h6 class="m-0 font-weight-bold text-primary">Booking trends</h6>
                                             <div class=" col-xl-4 col-md-6 mb-4 text-primary font-weight-bold">
-                                    <select id="service" name="gender" class="form-control shadow-none" required> 
-                                        <option value="">Service</option>
-                                        <option value="Male">Gender</option>
-                                        <option value="Female">Age group</option>
-                                        <option value="Female">Time</option>
-                                      
-                                    </select>
-                                </div>
+                                                <select id="service" name="gender" class="form-control shadow-none" required> 
+                                                    <option value="">Service</option>
+                                                    <option value="Male">Gender</option>
+                                                    <option value="Female">Age group</option>
+                                                    <option value="Female">Time</option>
+                                                </select>
+                                            </div>
                                         </div>
                                         <!-- Card Body -->
                                         <div class="card-body">
                                             <div class="chart-area">
-                                                <canvas id="myAreaChart"></canvas>
+                                                <canvas id="myAreaChartOverview"></canvas>
                                             </div>
                                         </div>
                                     </div>
@@ -536,23 +533,18 @@
                                                     <a class="dropdown-item" href="#">Something else here</a>
                                                 </div>
                                             </div>
+                                            
                                         </div>
                                         <!-- Card Body -->
                                         <div class="card-body">
+                                                <div class = "mt-2" >
+
+                                                    <h6 class="text-primary small">Total clinics available <span class = "h6 ml-5 font-weight-bold">8</span></h6>
+                                                    <h6 class="text-primary small">Total appointments booked <span class = "h6 ml-3 font-weight-bold">5,000</span></h6>
+                                                </div>
                                             <div class="chart-pie pt-4 pb-2">
-                                                <canvas width="600" height="250" id="myPieChart"></canvas>
+                                                <canvas width="600" height="250" id="myPieChartOverview"></canvas>
                                             </div>
-                                            <!-- <div class="mt-4 text-center small">
-                                                <div class="mr-2">
-                                                    <i class="fas fa-circle text-primary"></i> Direct
-                                                </div>
-                                                <div class="mr-2">
-                                                    <i class="fas fa-circle text-success"></i> Social
-                                                </div>
-                                                <div class="mr-2">
-                                                    <i class="fas fa-circle text-info"></i> Referral
-                                                </div>
-                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
@@ -626,6 +618,7 @@
     <!-- Page level custom scripts -->
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
+    <script src="js/demo/chartDash.js"></script>
 
     <!-- Page level plugins -->
     <script src="vendor/datatables/jquery.dataTables.min.js"></script>
