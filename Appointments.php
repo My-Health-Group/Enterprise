@@ -406,8 +406,8 @@
                         <div id="exTab2" class="container1 ">	
 
                             <ul class="nav nav-tabs ">
-                                <li class=" mr-5 text-primary">
-                                <a  href="#1" data-toggle="tab">Telemedicine</a>
+                                <li class="active mr-5 text-primary">
+                                <a  href="#1" data-toggle="tab" class="active">Telemedicine</a>
                                 </li>
                                 <li class = "mr-5 text-primary"><a href="#2" data-toggle="tab">In Person</a>
                                 </li>
@@ -518,7 +518,7 @@
                                                     <div class="card-body">
                                                     <div class = "mt-2" >
                                                         <h6 class="text-primary small">Total clinics available <span class = "h6 ml-5 font-weight-bold">8</span></h6>
-                                                        <h6 class="text-primary small">Total clinics available <span class = "h6 ml-5 font-weight-bold">5,000</span></h6>
+                                                        <h6 class="text-primary small">Total appointments booked <span class = "h6 ml-3 font-weight-bold">5,000</span></h6>
                                                     </div>
                                                         <div class="chart-pie pt-4 pb-2">
                                                             <canvas width="600" height="250" id="myPieChartTelemedicine"></canvas>
@@ -631,7 +631,7 @@
                                                     <div class="card-body">
                                                     <div class = "mt-2" >
                                                         <h6 class="text-primary small">Total clinics available <span class = "h6 ml-5 font-weight-bold">8</span></h6>
-                                                        <h6 class="text-primary small">Total clinics available <span class = "h6 ml-5 font-weight-bold">5,000</span></h6>
+                                                        <h6 class="text-primary small">Total appointments booked <span class = "h6 ml-3 font-weight-bold">5,000</span></h6>
                                                     </div>
                                                         <div class="chart-pie pt-4 pb-2">
                                                             <canvas width="600" height="250" id="myPieChartInPerson"></canvas>
@@ -743,7 +743,7 @@
                                                     <div class="card-body">
                                                     <div class = "mt-2" >
                                                         <h6 class="text-primary small">Total clinics available <span class = "h6 ml-5 font-weight-bold">8</span></h6>
-                                                        <h6 class="text-primary small">Total clinics available <span class = "h6 ml-5 font-weight-bold">5,000</span></h6>
+                                                        <h6 class="text-primary small">Total appointments booked <span class = "h6 ml-3 font-weight-bold">5,000</span></h6>
                                                     </div>
                                                         <div class="chart-pie pt-4 pb-2">
                                                             <canvas width="600" height="250" id="myPieChartAll"></canvas>

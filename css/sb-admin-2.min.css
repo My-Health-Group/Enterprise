@@ -1658,12 +1658,12 @@ pre code {
 }
 
 .table-bordered {
-    border: 1px solid #e3e6f0
+    /* border: 1px solid #e3e6f0 */
 }
 
 .table-bordered td,
 .table-bordered th {
-    border: 1px solid #e3e6f0
+    /* border: 1px solid #e3e6f0 */
 }
 
 .table-bordered thead td,
@@ -4868,7 +4868,7 @@ input[type=submit].btn-block {
 }
 
 .card-header {
-    padding: .75rem 1.25rem;
+    padding: .75rem .25rem;
     margin-bottom: 0;
     border-bottom: 1px solid #e3e6f0
 }

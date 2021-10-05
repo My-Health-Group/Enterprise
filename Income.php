@@ -395,15 +395,13 @@
                                 <div class="row">
                                     <!-- Total appointments card -->
                                     <div class="col-xl-4 col-md-6 mb-4">
-                                        <div class="card shadow py-2 hg">
+                                        <div class="card shadow py-2">
                                             <div class="card-body">
                                                 <div class="row no-gutters align-items-center">
                                                     <div class="col mr-2">
                                                         <div class="text-xs font-weight-bold text-primary mb-1">
-                                                            Total appointments
-                                                            <!-- <div class="col-auto"> -->
-                                                                <div class="h5 mb-0 mr-3 font-weight-bold text-secondary">5000</div>
-                                                            <!-- </div> -->
+                                                            <!-- Total appointments -->
+
                                                             <div class = "row">
                                                                 <div class = "column">
                                                                     <div class="col-xs-4 topbar-divider d-none d-sm-block"></div>
@@ -413,77 +411,87 @@
                                                         <div class="row">
 
                                                             <div class="col-md-6 small">
-                                                            Telemedicine
-                                                            <div class="h5 mb-0 mr-3 font-weight-bold text-secondary">1000</div>
+                                                            This month so far
+                                                            <div class="h6 mb-0 mr-3 font-weight-bold text-secondary">1000</div>
                                                             </div>
                                                             
                                                             <div class="col-md-6 border-left small">
-                                                            In-person
-                                                            <div class="h5 mb-0 mr-3 font-weight-bold text-secondary">1000</div>
+                                                            Previous month
+                                                            <div class="h6 mb-0 mr-3 font-weight-bold text-secondary">1000</div>
                                                             </div>
 
                                                          </div>
 
                                                     </div>
-                                                    <!-- <div class="col-auto">
-                                                        <i class="fas fa-calendar fa-2x text-gray-300"></i>
-                                                    </div> -->
+                                                    
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
 
                                     <!-- Income card -->
-                                    <div class="col-xl-6 col-md-6 mb-4">
-                                        <div class="card shadow py-2 hg">
+                                    <div class="col-xl-4 col-md-6 mb-4">
+                                        <div class="card shadow py-2">
                                             <div class="card-body">
                                                 <div class="row no-gutters align-items-center">
                                                     <div class="col mr-2">
                                                         <div class="text-xs font-weight-bold text-primary mb-1">
-                                                            Income</div>
-                                                            <div >&nbsp</div>
-                                                        <div class="row">
-                                                            <div class="col-md-6 border-right small">
-                                                            This Month
-                                                            <div class="h5 mb-0 mr-3 font-weight-bold text-secondary">KES 200,000</div>
+
+                                                            <div class = "row">
+                                                                <div class = "column">
+                                                                    <div class="col-xs-4 topbar-divider d-none d-sm-block"></div>
+                                                                </div>
                                                             </div>
+                                                        </div>
+                                                        <div class="row">
 
                                                             <div class="col-md-6 small">
-                                                             Previous Month
-                                                             <div class="h5 mb-0 mr-3 font-weight-bold text-secondary">KES 1,300,000</div>
+                                                            From telemedicine
+                                                            <div class="h6 mb-0 mr-3 font-weight-bold text-secondary">KES 200,000</div>
+                                                            </div>
+                                                            
+                                                            <div class="col-md-6 border-left small">
+                                                            From In-person
+                                                            <div class="h6 mb-0 mr-3 font-weight-bold text-secondary">KES 1,300,000</div>
                                                             </div>
 
-                                                        </div>
+                                                         </div>
+
                                                     </div>
+                                                    
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
 
                                     <!-- Total clinics Card -->
-                                    <div class="col-xl-2 col-md-6 mb-4">
-                                        <div class="card shadow  py-2 hg">
+                                    <div class="col-xl-3 col-md-6 mb-4">
+                                        <div class="card shadow py-2">
                                             <div class="card-body">
                                                 <div class="row no-gutters align-items-center">
                                                     <div class="col mr-2">
-                                                        <div class="text-xs font-weight-bold text-primary mb-1 small">Total clinics
-                                                        </div>
-                                                        <div class="row no-gutters align-items-center">
-                                                            <div class="col-auto">
-                                                                <div class="h6 mb-0 mr-3 font-weight-bold text-gray-800">8</div>
-                                                                <!-- Divider -->
-                                                                <hr>
-                                                                <div class="text-xs font-weight-bold text-primary mb-1 small">Total Doctors
-                                                                </div>                                                                
-                                                                <div class="h6 mb-0 mr-3 font-weight-bold text-gray-800">80</div>
+                                                        <div class="text-xs font-weight-bold text-primary mb-1">
+                                                            <div class = "row">
+                                                                <div class = "column">
+                                                                    <div class="col-xs-4 topbar-divider d-none d-sm-block"></div>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
+                                                        <div class="row">
+                                                            
+                                                            <div class="col-md-6 border-left small">
+                                                            Yearly income
+                                                            <div class="h6 mb-0 mr-3 font-weight-bold text-secondary">20,000</div>
+                                                            </div>
 
+                                                         </div>
+
+                                                    </div>
+                                                    
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>                            
+                                    </div>                         
                                 </div>
                                 <!-- Bar Chart -->
                                 <div class="col-xl-12 p-0 col-lg-7">
@@ -512,7 +520,7 @@
                                
                                 <!-- table -->
                                 <div class="col-xl-12 p-0 col-lg-7">
-                                    <?php require "tables.html";?>
+                                    <?php require "tables-income.html";?>
                                 </div>
                             </div>
                             
