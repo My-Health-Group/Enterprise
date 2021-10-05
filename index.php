@@ -341,12 +341,13 @@
                             </select>
                         </div>
 
-                        <!-- Toggle filters -->
-                        <a href="#" class="d-none d-sm-inline-block btn btn-sm shadow-sm shadow">Filters <i
-                                class="fas fa-caret-down"></i> </a>
+                        <!-- Toggle filters button -->
+                        <Button href="#filters" data-toggle="collapse" class=" btn btn-default shadow">Filters <i
+                                class="fas fa-caret-down"></i> </Button>
                     </div>
 
-                    <!-- Filters displayed -->
+                    <!-- Filters collapsed -->
+                    <div id = "filters" class = "collapse fade">
                         <div class = "row">
                                 <div class=" col-xl-4 col-md-6 mb-4 text-primary font-weight-bold">
                                     <label>Location</label>
@@ -388,6 +389,7 @@
                         </div>
 
                         <div class="sidebar-dark hr-b "></div>
+                    </div>
 
                         <div class="row">
                             <!-- column 1 -->
